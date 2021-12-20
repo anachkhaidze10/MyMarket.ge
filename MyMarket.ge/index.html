@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MyMarket.ge</title>
+</head>
+<body class="bg-gray-100 xl:w-full">
+
+    <header class="px-3 py-6 border-b-2 border-gray-200 bg-white">
+        <div class=" flex flex-row justify-between xl:space-x-6">
+            <div class="flex flex-row rounded-full bg-amber-400 w-44 h-12 py-1 px-4 mr-2 md:w-96 md:h-16 xl:w-2/3">
+                <a href="index.html">
+                    <img id="main-logo" src="images/logo.svg" class="w-14 h-10 md:h-14">
+                </a>
+                <form class="relative md:w-96 xl:w-full">
+
+                    <button class="absolute right-5 md:border-r md:border-gray-300 md:top-3 xl:right-10 xl:pr-3">
+                        <img id="photo-upload" src="./images/img-upload.svg" >
+                    </button>
+                    
+
+                    <button class="absolute right-0 top-2 md:top-5 xl:pr-4">
+                        <img id="search-button" src="images/search.svg" >
+                    </button>
+                    
+                    <input id="search-bar" class="flex rounded-full w-full mx-3 h-full pl-2 text-sm font-semibold" type="text" name="search" placeholder="market">
+                </form>
+            </div>
+    
+            <div class="flex flex-row space-x-6 md:items-center">
+                <button id="auth-button" class="hidden xl:flex rounded-full px-6 py-2 border border-gray-200 items-center justify-around space-x-1">
+                    <img src="./images/add.svg" alt="">
+                    <span class="text-sm font-semibold">დამატება</span>
+                </button>
+
+                <button id="message" class="hidden xl:flex">
+                    <img  src="./images/message.svg" class="md:h-5 xl:border-l xl:border-x-gray-200 xl:pl-4">
+                </button>
+
+                <button id="favorites" >
+                    <img src="./images/favorites.svg" class="md:h-5">
+                </button>
+
+                <button id="cart" >
+                    <img src="images/cart.svg" class="md:border-r md:border-x-gray-200 md:h-5 md:pr-4">
+                </button>
+                
+                
+                <button id="auth-button" class="hidden md:flex rounded-full px-6 py-2 border border-gray-200 items-center justify-around space-x-1">
+                    <img src="./images/auth.svg" alt="">
+                    <span class="text-sm font-semibold">ავტორიზაცია</span>
+                </button>
+
+                <button id="menu">
+                    <img src="images/menu.svg" class=" md:h-4">
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="flex flex-row justify-between bg-white p-3 md:px-6">
+
+        <div class="flex">
+            <button class="flex flex-row flex-wrap content-center lg:hidden">
+                <img src="images/category.svg" class="mt-1">
+                <span class="text-gray-400 text-sm font-bold ml-2">კატეგორიები</span>
+            </button> 
+            <div class="hidden md:flex font-semibold text-sm space-x-4 items-center ml-2 text-gray-500">
+                <a href="">ონლაინ ყიდვა</a>
+                <a href="">visa | -30%</a>
+            </div> 
+        </div>
+ 
+
+        <a href="">
+            <div class="flex bg-red-100 rounded-full px-4 py-3">
+                <img src="./images/sales-button.svg" alt="" class="">
+                <p class="text-red-500 text-sm pl-2">ფასდაკლება</>      
+            </div>
+        </a>
+    </section>
+
+    <section class="container mx-auto px-4 lg:mt-6 ">
+        <div class="lg:flex space-x-4">
+            <div class="hidden lg:flex">
+                <ul class="bg-white rounded-xl p-6 text-gray-500 space-y-3 font-semibold">
+                    <li>
+                        <a href="" class="truncate">საახალწლო პროდუქცია</a>
+                    </li>
+                    <li>
+                        <a href="" class="truncate">სუპერმარკეტები</a>
+                    </li>
+                    <li>
+                        <a href="" class="truncate">მომსახურება</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">გაქირავება</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">სახლი და ბაღი</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">საოჯახო ტექნიკა</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">ტექნიკა</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">ნადირობა და თევზაობა</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">მუსიკა</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">საბავშვო</a>    
+                    </li>
+                    <li>
+                        <a href="" class="truncate">სილამაზე და მოდა</a>  
+                    </li>
+                    <li>
+                        <a href="" class="truncate">მშენებლობა და რემონტი</a>  
+                    </li>
+                    <li>
+                        <a href="" class="truncate">სოფლის მეურნეობა</a>  
+                    </li>
+                    <li>
+                        <a href="" class="truncate">ცხოველები</a>  
+                    </li>
+                    <li>
+                        <a href="" class="truncate">სპორტი და დასვენება</a>  
+                    </li>
+                </ul>
+            </div>
+            <div class="md:bg-white md:rounded-xl md:pb-6 lg:w-full">
+                <div class="mt-4">
+                    <img src="images/slider.png" class="rounded-xl h-36 md:w-full md:h-80 md:px-8 md:pt-4 ">
+                </div>
+        
+                <div class="flex flex-row justify-evenly mt-4 space-x-2 md:bg-gray-100 md:p-8 md:mx-8 md:rounded-xl">
+                    <div class="bg-white w-40 py-3 rounded-lg">
+                        <div class="flex justify-center">
+                            <img src="./images/login.svg" class="w-10">
+                        </div>
+                        <div>
+                            <p class="text-sm text-center font-semibold">შესვლა/ <br> რეგისტრაცია</p>
+                        </div>
+                    </div>
+        
+                    <div class="bg-white w-40 py-3 rounded-lg">
+                        <div class="flex justify-center">
+                            <img src="./images/sales.svg" class="w-10">
+                        </div>
+                        
+                        <div>
+                            <p class="text-sm text-center font-semibold">ფასდაკლებები</p>
+                        </div>
+                    </div>
+    
+                    <div class="hidden md:flex md:flex-col bg-white w-40 py-3 rounded-lg">
+                        <div class="flex justify-center">
+                            <img src="./images/main-shops.svg" class="w-10">
+                        </div>
+                        
+                        <div>
+                            <p class="text-sm text-center font-semibold">ონლაინ მაღაზიები</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-6 px-4 ">
+        <div class="bg-white rounded-xl md:flex md:items-center">
+            <img src="./images/trade.gif" class="h-36 xl:w-1/2">
+
+            <div class="xl:p-12 xl:w-1/2">
+                <div class="mx-6 mt-4 space-y-4">
+                    <h1 class="text-lg font-bold md:text-xl xl:text-2xl">Trade in - შეცვალე ძველი ტექნიკა ახლით</h1>
+                    <p class="text-gray-400">ატვირთე შენი ძველი ტექნიკის მონაცემები, ჩააბარე და დაიბრუნე მისი ღირებულება საბანკო ანგარიშზე</p>
+                </div>
+                
+                <div class="flex justify-center mt-4 pb-4 md:justify-start">
+                    <button class="w-full py-3 rounded-lg bg-amber-400 mx-4 md:w-28"><span class="text-white text-sm font-semibold">დაწყება</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-6 px-4 ">
+        <div class="bg-white rounded-xl pt-6">
+            <div class="flex justify-around md:justify-start md:mx-12">
+                <div class="flex flex-row space-x-2">
+                    <div class="flex bg-amber-400 rounded-full px-2">
+                        <p class="text-xs font-semibold text-white pt-1">S-VIP</p>
+                    </div>
+        
+                    <div>
+                        <p class="font-semibold">SUPER VIP</p>
+                    </div>
+                </div>
+    
+                <div>
+                    <a class="text-blue-500 underline text-sm md:ml-4">165 განცხადება</a>
+                </div>
+            </div>
+    
+            <div class="flex flex-row mt-4 pb-4 space-x-2 px-4 overflow-x-auto categories">
+                <a>
+                    <div class="flex flex-col justify-start">
+                        <div class="w-36">
+                            <img src="./images/s-vip.jpg" class="rounded-2xl">
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold truncate">ნაძვის ხე</h5>
+                            <p class="text-xs font-semibold text-gray-400">29.00 ₾</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a>
+                    <div class="flex flex-col justify-start">
+                        <div class="w-36">
+                            <img src="./images/s-vip.jpg"  class="rounded-2xl">
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold truncate">ნაძვის ხე</h5>
+                            <p class="text-xs font-semibold text-gray-400">45.20 ₾</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a>
+                    <div class="flex flex-col justify-start">
+                        <div class="w-36">
+                            <img src="./images/s-vip.jpg"  class="rounded-2xl">
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold truncate">ნაძვის ხე</h5>
+                            <p class="text-xs font-semibold text-gray-400">45.20 ₾</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a>
+                    <div class="flex flex-col justify-start">
+                        <div class="w-36">
+                            <img src="./images/s-vip.jpg"  class="rounded-2xl">
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold truncate">ნაძვის ხე</h5>
+                            <p class="text-xs font-semibold text-gray-400">45.20 ₾</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a>
+                    <div class="flex flex-col justify-start">
+                        <div class="w-36">
+                            <img src="./images/s-vip.jpg"  class="rounded-2xl">
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold truncate">ნაძვის ხე</h5>
+                            <p class="text-xs font-semibold text-gray-400">45.20 ₾</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a>
+                    <div class="flex flex-col justify-start">
+                        <div class="w-36">
+                            <img src="./images/s-vip.jpg"  class="rounded-2xl">
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold truncate">ნაძვის ხე</h5>
+                            <p class="text-xs font-semibold text-gray-400">45.20 ₾</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-6 px-4 ">
+        <div class="bg-white rounded-xl md:flex md:flex-row-reverse md:items-center">
+            <img src="./images/delivery.gif" class="h-36 md:h-28 xl:w-1/2">
+            <div class="xl:p-12">
+                <div class="mx-6 mt-4 space-y-4 xl:w-1/2">
+                    <h1 class="text-lg font-bold md:text-xl xl:text-2xl">იყიდე მეორადი ნივთები სახლიდან გაუსვლელად</h1>
+                    <p class="text-gray-400">უკვე შეგიძლია მეორადი პროდუქცია იყიდო სახლიდან გაუსვლელად, ონლაინ გადახდითა და ადგილზე მიტანით</p>
+                </div>
+                
+                <div class="flex justify-center mt-4 pb-4 md:justify-start">
+                    <button class="w-full py-3 rounded-lg bg-amber-400 mx-4 md:w-28"><span class="text-white text-sm font-semibold">იყიდე ახლა</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-12 mb-12 px-4 ">
+        <div id="categories" class="grid grid-cols-6 gap-44 overflow-x-auto categories xl:gap-24">
+            <a href="">
+                <div class="w-36">
+                    <div class="bg-white rounded-full">
+                        <img src="./images/tech.png" class="">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold truncate text-center">ტექნიკა</p>
+                    </div>
+               
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="w-36">
+                    <div class="bg-white rounded-full">
+                        <img src="./images/hometech.png" class="">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold truncate text-center">საოჯახო ტექნიკა</p>
+                    </div>
+                
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="w-36">
+                    <div class="bg-white rounded-full">
+                        <img src="./images/home.png" class="">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold truncate text-center">სახლი და ბაღი</p>
+                    </div>
+               
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="w-36">
+                    <div class="bg-white rounded-full">
+                        <img src="./images/build.png" class="">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold truncate text-center">მშენებლობა და <br> რემონტი</p>
+                    </div>
+               
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="w-36">
+                    <div class="bg-white rounded-full">
+                        <img src="./images/fashion.png" class="">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold truncate text-center">სილამაზე და მოდა</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="w-36">
+                    <div class="bg-white rounded-full">
+                        <img src="./images/kids.png" class="">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold truncate text-center">საბავშვო</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-6 px-4 ">
+        <div class="bg-white rounded-xl md:flex md:flex-row-reverse md:items-center">
+            <img src="./images/shop.gif" class="h-36 md:h-40 xl:w-1/2">
+
+            <div class="xl:p-12 xl:w-1/2">
+                <div class="mx-6 mt-4 space-y-4">
+                    <h1 class="text-lg font-bold md:text-xl xl:text-2xl">ონლაინ მაღაზიები</h1>
+                    <p class="text-gray-400">შეიძინე ონლაინ საშენო პროდუქცია, 300-ზე მეტი მაღაზიისგან და მიიღე სასურველ მისამართზე მთელ საქართველოში</p>
+                </div>
+                
+                <div class="flex justify-center mt-4 pb-4 md:justify-start">
+                    <button class="w-full py-3 rounded-lg bg-amber-400 mx-4 md:w-36"><span class="text-white text-sm font-semibold truncate">დაიწყე შოპინგი</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-8 px-4 ">
+        <div class="md:flex md:flex-row md:items-center">
+            <div>
+                <h3 class="text-lg font-semibold truncate md:text-xl md:mt-1">საშენო პროდუქტები</h3>
+            </div>
+            <div class="overflow-x-auto categories">
+                
+                <div class="flex space-x-3 w-96 mt-4 md:w-full md:ml-3">
+                    <div>
+                        <button class="bg-gray-200 rounded-full text-sm truncate p-2 focus:bg-white focus:text-gray-400">ელექტრო გამათბობელი</button>
+                    </div>
+                    <div>
+                        <button class="bg-gray-200 rounded-full text-sm truncate p-2 focus:bg-white focus:text-gray-400">წიგნები</button>
+                    </div>
+                    <div>
+                        <button class="bg-gray-200 rounded-full text-sm truncate p-2 focus:bg-white focus:text-gray-400">თავის მოვლა</button>
+                    </div>
+                    <div>
+                        <button class="bg-gray-200 rounded-full text-sm truncate p-2 focus:bg-white focus:text-gray-400">ბაღის ინსტრუმენტები</button>
+                    </div>
+                    <div>
+                        <button class="bg-gray-200 rounded-full text-sm truncate p-2 focus:bg-white focus:text-gray-400">კომპიუტერები</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-6 px-4 ">  
+        <div class="lg:flex lg:flex-row lg:w-full lg:justify-evenly">
+            <div class="lg:w-1/2">
+                <div class="relative flex justify-center">
+                    <img src="./images/listing.jpg" class="rounded-xl  md:w-full md:h-80">
+                    <div class="text-white text-3xl font-bold absolute top-6 leading-relaxed font-sans md:text-4xl md:left-0 md:ml-4">ელექტრო გამათბობლები</div>
+                </div>
+            </div>
+    
+            <div class="md:flex md:flex-wrap md:justify-around lg:flex-col xl:flex-row">
+                <div class="bg-white mt-6 rounded-lg p-4 h-38 w-full md:w-64 lg:w-96 lg:p-6">
+                    <a href="">
+                        <div class="flex space-x-6">
+                            <div class="w-1/2">
+                                <img src="./images/listing-1.jpg" alt="" class="rounded-lg h-24 w-24 md:h-24 md:w-20">
+                            </div>
+                            <div class="w-1/2">
+                                <p class="truncate text-sm">ინფრაწითელი გამათბობელი</p>
+                                <h3 class="font-semibold text-lg">50.00 ₾</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="bg-white mt-6 rounded-lg p-4 h-32 w-full md:w-64 lg:hidden xl:flex xl:w-96 xl:p-6">
+                    <a href="">
+                        <div class="flex space-x-6">
+                            <div class="w-1/2">
+                                <img src="./images/listing-2.jpg" alt="" class="rounded-lg h-24 w-24 md:h-28 md:w-20 xl:h-20">
+                            </div>
+                            <div class="w-1/2">
+                                <p class="truncate text-sm">ელექტრო გამათბობელი</p>
+                                <h3 class="font-semibold text-lg">89.99 ₾</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="bg-white mt-6 rounded-lg p-4 h-32 w-full md:w-64 lg:w-96 lg:p-8">
+                    <a href="">
+                        <div class="flex space-x-6">
+                            <div class="w-1/2">
+                                <img src="./images/listing-3.jpg" alt="" class="rounded-lg h-24 w-24 md:h-28 md:w-20 lg:h-20">
+                            </div>
+                            <div class="w-1/2">
+                                <p class="truncate text-sm">წყლის გამათბობელი</p>
+                                <h3 class="font-semibold text-lg">165.00 ₾</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="bg-white mt-6 rounded-lg p-4 h-32 text-center md:w-64 lg:hidden xl:flex xl:flex-col xl:w-96 xl:p-6">
+                    <h1 class="text-lg font-semibold mb-4">მაჩვენე ყველა</h1>
+                    <a href="">
+                        <p class="text-blue-500 underline text-sm">76 განცხადება</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mx-auto mt-6 px-4 ">
+        <div>
+            <h1 class="font-semibold text-lg">ფასდაკლებები</h1>
+        </div>
+
+        <div class="flex overflow-x-auto space-x-4 categories">
+            <div >
+                <div class="flex bg-white rounded-t-xl mt-4 p-6 space-x-3 w-72">
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-1.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">229.00 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">299.00 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-2.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">459.01 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">599.00 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="flex bg-white p-6 space-x-3 rounded-b-xl w-72">
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-3.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">218.99 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">459 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-4.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">349.00 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">459 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="flex space-x-2">
+                        <p class="text-sm text-white bg-green-500 rounded-full font-semibold">-23%</p>
+                        <h3 class="font-semibold">ნაძვის ხეზე</h3>
+                    </div>
+        
+                    <div class="mt-3">
+                        <a href="" class="text-blue-500 underline text-sm font-semibold">92 განცხადება</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="flex bg-white rounded-t-xl mt-4 p-6 space-x-3 w-72">
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-1.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">229.00 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">299.00 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-2.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">459.01 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">599.00 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="flex bg-white p-6 space-x-3 rounded-b-xl w-72">
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-3.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">218.99 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">459 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-4.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">349.00 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">459 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="mt-6">
+                    <div class="flex space-x-2">
+                        <p class="text-sm text-white bg-green-500 rounded-full font-semibold">-23%</p>
+                        <h3 class="font-semibold">ნაძვის ხეზე</h3>
+                    </div>
+        
+                    <div class="mt-3">
+                        <a href="" class="text-blue-500 underline text-sm font-semibold">92 განცხადება</a>
+                    </div>
+                </div>   
+            </div>
+
+            <div>
+                <div class="flex bg-white rounded-t-xl mt-4 p-6 space-x-3 w-72">
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-1.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">229.00 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">299.00 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-2.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">459.01 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">599.00 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="flex bg-white p-6 space-x-3 rounded-b-xl w-72">
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-3.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">218.99 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">459 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="">
+                            <div>
+                                <div>
+                                    <img src="./images/sales-4.jpg" alt="" class="border border-gray-200 rounded-xl">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-green-500 font-semibold text-lg">349.00 ₾</p>
+                                    <p class="text-gray-400 line-through text-sm">459 ₾</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="mt-6">
+                    <div class="flex space-x-2">
+                        <p class="text-sm text-white bg-green-500 rounded-full font-semibold">-23%</p>
+                        <h3 class="font-semibold">ნაძვის ხეზე</h3>
+                    </div>
+        
+                    <div class="mt-3">
+                        <a href="" class="text-blue-500 underline text-sm font-semibold">92 განცხადება</a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white mt-12 pb-6 md:pb-12">
+        <div class="flex flex-col pt-8 space-y-6">
+            <div>
+                <div class="flex justify-center">
+                    <img src="./images/how.svg" alt="">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-semibold">როგორ ვიყიდო ონლაინ?</h1>
+                </div>
+            </div>
+
+            <div class="md:flex md:flex-row">
+                <div>
+                    <div class="flex justify-center">
+                        <div class="absolute h-8 w-8 mt-3 rounded-full bg-amber-400 animation-ping opacity-75"></div>
+                        <img src="./images/market.svg" alt="" class="z-10" >
+                    </div>
+                    <div class="text-center mx-12">
+                        <h1 class="text-sm">დააკლიკე ღილაკს "ონლაინ ყიდვა"</h1>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="flex justify-center">
+                        <div class="absolute h-8 w-8 mt-3 rounded-full bg-amber-400 animation-ping-1 opacity-75"></div>
+                        <img src="./images/cart-1.svg" alt="" class="z-10">
+                    </div>
+                    <div class="text-center mx-12">
+                        <h1 class="text-sm">ნახე სასურველ კატეგორიაში საშენო პროდუქტი</h1>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="flex justify-center">
+                        <div class="absolute h-8 w-8 mt-3 rounded-full bg-amber-400 animation-ping-2 opacity-75"></div>
+                        <img src="./images/box.svg" alt="" class="z-10">
+                    </div>
+                    <div class="text-center mx-12">
+                        <h1 class="text-sm">დააჭირე ღილაკს "შეძენა" და მიყევი ინსტრუქციას</h1>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="flex justify-center">
+                        <div class="absolute h-8 w-8 mt-3 rounded-full bg-amber-400 animation-ping-3 opacity-75"></div>
+                        <img src="./images/house.svg" alt="" class="z-10">
+                    </div>
+                    <div class="text-center mx-12">
+                        <h1 class="text-sm">ნივთს ჩვენ მოგიტანთ სასურველ მისამართზე</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="relative h-12">
+            <button class="w-full h-full bg-amber-400"></button>
+            <img src="./images/scroll.svg" alt="" class="absolute top-2/4 left-2/4 -translate-y-1/2 -translate-x-1/2">
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-white pt-6 px-4 md:flex md:justify-between">
+            <div class="flex flex-row justify-between md:space-x-12">
+            
+                <div class="flex flex-col space-y-2">
+                    <div class="font-semibold text-xs">მენიუ</div>
+                    <a href="" class="text-gray-400 text-xs">მთავარი</a>
+                    <a href="" class="text-gray-400 text-xs">მაღაზიები</a>
+                    <a href="" class="text-gray-400 text-xs">იყიდე ონლაინ</a>
+                    <a href="" class="text-gray-400 text-xs">დახმარება</a>
+                    <a href="" class="text-gray-400 text-xs">კონტაქტი</a>
+                    <a href="" class="text-gray-400 text-xs">საიტის წესები</a>
+                </div>
+    
+                
+                <div class="flex flex-col space-y-2">
+                    <div class="font-semibold text-xs">ჩემი გვერდი</div>
+                    <a href="" class="text-gray-400 text-xs">იყიდე ონლაინ</a>
+                    <a href="" class="text-gray-400 text-xs">ჩემი განცხადებები</a>
+                    <a href="" class="text-gray-400 text-xs">განცხადების დამატება</a>
+                    <a href="" class="text-gray-400 text-xs">შეტყობინებები</a>
+                    <a href="" class="text-gray-400 text-xs">ბალანსის შევსება</a>
+                    <a href="" class="text-gray-400 text-xs">ანგარიშის რედაქტირება</a>
+                </div>
+            </div>
+    
+            <div class="md:flex md:flex-col">
+                <div class="flex flex-row justify-between mt-4 px-6 md:flex-col md:space-y-3 md:px-0">
+                    <p class="hidden md:flex text-xs font-semibold">სოც. ქსელები</p>
+                    <div class="flex flex-row space-x-3 md:h-10">
+                        <img src="./images/fb.svg" alt="" class="rounded-full bg-gray-200 px-3">
+                        <img src="./images/insta.svg" alt="" class="rounded-full bg-gray-200 px-3">
+                        <img src="./images/linkedin.svg" alt="" class="rounded-full bg-gray-200 px-3">
+                    </div>
+                    <p class="hidden md:flex text-xs font-semibold">ენები</p>
+                    <div class="flex flex-row space-x-3">
+                        <img src="./images/ge.svg" alt="" class="rounded-full bg-gray-200 p-2">
+                        <img src="./images/en.svg" alt="" class="rounded-full bg-gray-200 p-2">
+                    </div>
+                </div>
+        
+                <div class="mt-4 mb-4">
+                    <div class="mt-4 mb-4">
+                        <h3 class="text-sm font-semibold">გადმოწერე აპლიკაცია</h3>
+                    </div>
+                    
+                    <div class="flex flex-row space-x-2">
+                        <div>
+                            <img src="./images/ios.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/android.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

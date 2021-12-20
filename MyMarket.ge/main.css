@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+body{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.categories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .categories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.animation-ping{
+    animation: ping 4s cubic-bezier(0, 0, 0.2, 0.7) infinite;
+}
+
+.animation-ping-1{
+    animation: ping 4s cubic-bezier(0, 0, 0.2, 0.7) infinite;
+    animation-delay: 1s, 480ms;
+}
+
+.animation-ping-2{
+    animation: ping 4s cubic-bezier(0, 0, 0.2, 0.7) infinite;
+    animation-delay: 2s, 480ms;
+}
+
+.animation-ping-3{
+    animation: ping 4s cubic-bezier(0, 0, 0.2, 0.7) infinite;
+    animation-delay: 3s, 480ms;
+}
+
+@keyframes ping {
+    100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
